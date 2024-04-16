@@ -26,7 +26,7 @@ public class Movie
 
     [Column(TypeName = "Year")]
     [Display(Name = "Ano de estreia")]
-    public Int16 MyProperty { get; set; }
+    public Int16 MovieYear { get; set; }
 
     [Display(Name = "Duração")]
     [Required(ErrorMessage = "Por favor, informe a duração")]
