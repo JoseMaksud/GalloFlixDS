@@ -25,6 +25,8 @@ Pacotes para CRUD
     Microsoft.VisualStudio.Web.CodeGeneration.Design
 
 Criar um controller CRUD - CREATE READ UPDATE DELETE
-dotnet-aspnet-codegenerator controller -name GenresController -m Genre -dc AppDbContext --outDir  Controllers -udl
+dotnet-aspnet-codegenerator controller -name GenresController -m Genre -dc AppDbContext -outDir Controllers -udl
+
+dotnet-aspnet-codegenerator controller -name MoviesController -m Movie -dc AppDbContext -outDir Controllers -udl
 
 dotnet tool install --global dotnet-ef --version 8.0.4
