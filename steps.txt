@@ -10,6 +10,7 @@ Abrir o NugetGallery(Shif + Ctrl + P):
         EntityFrameworkCore.Design
         EntityFrameworkCore.Tools
         Pomelo.EntityFrameworkCore.MySql
+        AspNetCore.Identity.EntityFrameworkCore
 
 Criar as classes de dados - Pasta Models
 
@@ -30,3 +31,8 @@ dotnet-aspnet-codegenerator controller -name GenresController -m Genre -dc AppDb
 dotnet-aspnet-codegenerator controller -name MoviesController -m Movie -dc AppDbContext -outDir Controllers -udl
 
 dotnet tool install --global dotnet-ef --version 8.0.4
+dotnet tool update --global dotnet-ef --version 8.0.4
+
+dotnet ef migrations add AdicionandoUsuario
+
+dotnet ef database update
