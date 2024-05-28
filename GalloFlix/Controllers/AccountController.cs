@@ -23,6 +23,12 @@ public class AccountController : Controller
         _userManager = userManager;
     }
 
+    public IActionResult Register()
+    {
+        return View();
+    }
+
+
     [HttpGet]
     public IActionResult Login(string returnUrl)
     {
@@ -32,6 +38,7 @@ public class AccountController : Controller
         };
         return View(loginVM);
     }
+
     
     [HttpPost]
     [ValidateAntiForgeryToken]
